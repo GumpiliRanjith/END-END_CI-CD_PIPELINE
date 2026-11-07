@@ -4,10 +4,13 @@ jobs:
     again:
         runs-on: ubuntu-latest
         steps:
-            - name: my step
+            - name: checkout my repo
+              uses: actions/checkout@v4
+
+            - name: run my python code
               run : |
-                 echo "hello world"
-                 echo "my name is ranjith"
+                  python3 pthon3.py
+                  echo "my name is ranjith"
 
     onceagain:
         needs: again
