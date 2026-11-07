@@ -1,7 +1,7 @@
 import subprocess
 
 result = subprocess.run(
-    ["git","add","."]
+    ["git","push","origin","main"]
 )
 
 print(result.stdout)
