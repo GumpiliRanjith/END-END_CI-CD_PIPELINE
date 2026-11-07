@@ -2,7 +2,7 @@ import subprocess
 
 commands = [
     ["git", "add", "."],
-    ["git", "commit", "-m", "welcome"],
+    ["git", "commit", "-m", "ben10"],
     ["git", "push", "origin", "main"]
 ] 
 

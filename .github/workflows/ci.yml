@@ -16,3 +16,10 @@ jobs:
             - name: kumar
               run: |
                 echo "hello world"
+    march:
+        runs-on: ubuntu-latest
+        steps:
+            - name: january
+              run: |
+                echo "hello world"
+                echo "its been a nice"
