@@ -7,6 +7,9 @@ jobs:
             - name: checkout my repo
               uses: actions/checkout@v4
 
+            - name: list my files
+              run: ls -h
+
             - name: run my python code
               run : |
                   python3 pthon3.py
