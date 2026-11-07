@@ -1,8 +1,18 @@
 import subprocess
 
-result = subprocess.run(
-    ["git","push","origin","main"]
-)
+commands = [
+    ["git", "add", "."],
+    ["git", "commit", "-m", "welcome"],
+    ["git", "push", "origin", "main"]
+] 
 
+for cmd in commands:
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        check=False
+    )
 print(result.stdout)
 print(result.stderr)
+print("hello world")
