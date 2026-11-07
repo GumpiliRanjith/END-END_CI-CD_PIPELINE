@@ -1,0 +1,10 @@
+name: ranjith
+on: push
+jobs:
+    again:
+        runs-on: ubuntu-latest
+        steps:
+            - name: my step
+              run : |
+                 echo "hello world"
+                 echo "my name is ranjith"
