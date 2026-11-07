@@ -12,7 +12,7 @@ jobs:
 
             - name: run my python code
               run : |
-                  python3 pthon3.py
+                  python3 python3.py
                   echo "my name is ranjith"
 
     onceagain:
