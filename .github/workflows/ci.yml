@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python app.py
+      - run: python python3.py
       - if: github.event_name == 'push'
         uses: docker/login-action@v3
         with:
